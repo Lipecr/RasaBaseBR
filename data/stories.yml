@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+- story: saudação
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+
+- story: despedida
+  steps:
+  - intent: despedir
+  - action: utter_despedir
+

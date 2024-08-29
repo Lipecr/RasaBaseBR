@@ -1,0 +1,4 @@
+rasa
+spacy
+
+# spacy download pt_core_news_lg

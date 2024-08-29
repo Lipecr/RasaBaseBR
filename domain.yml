@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - cumprimentar
+  - despedir
+  - nlu_fallback
+
+responses:
+  utter_fallback:
+  - text: |
+      Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
+      Você pode perguntar de novo de outro jeito?
+  - text: |
+      Hummmm... Não sei se entendi. Pode escrever de outra forma?
+  - text: |
+      Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
+  - text: |
+      Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+
+  utter_cumprimentar:
+  - text: "Olá! Como posso te ajudar hoje?"
+  - text: "Oi! O que você gostaria de saber?"
+  - text: "E aí! Como posso te ajudar?"
+
+  utter_despedir:
+  - text: "Tchau! Até mais!"
+  - text: "Nos falamos em breve, até logo!"
+  - text: "Até mais, estou sempre por aqui!"
+
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: true
